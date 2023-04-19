@@ -139,7 +139,7 @@ public class Village {
 		 */
 		private int trouverEtalLibre() {
 			int indiceEtalLibre = -1;
-			for (int i = 0; i < etals.length && indiceEtalLibre < 0; i++) {
+			for (int i = 1; i < etals.length && indiceEtalLibre < 0; i++) {
 				if (!etals[i].isEtalOccupe()) {
 					indiceEtalLibre = i;
 				}
